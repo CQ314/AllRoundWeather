@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qiang.app.allroundweather">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.CityListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ChooseAreaActivity"
+            android:label="@string/title_activity_choose_area"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.NormalWeatherActivity"
+            android:label="@string/title_activity_normal_weather"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <service android:name=".service.AutoUpdateService"/>
+        <receiver android:name=".recevier.AutoUpdateReceiver"/>
+    </application>
+
+</manifest>
