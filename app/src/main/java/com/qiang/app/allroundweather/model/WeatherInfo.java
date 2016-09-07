@@ -2,8 +2,6 @@ package com.qiang.app.allroundweather.model;
 
 import android.util.Log;
 
-import com.qiang.app.allroundweather.activity.NormalWeatherActivity;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 

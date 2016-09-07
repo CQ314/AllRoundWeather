@@ -50,7 +50,7 @@ public class CityListActivity extends AppCompatActivity implements NavigationVie
         weatherInfoListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(CityListActivity.this, NormalWeatherActivity.class);
+                Intent intent = new Intent(CityListActivity.this, TabbedWeatherActivity.class);
                 intent.putExtra("county_name", weatherInfoList.get(position).getCityName());
                 //Toast.makeText(CityListActivity.this,countyName ,Toast.LENGTH_SHORT).show();
                 startActivityForResult(intent, REQUEST_WEATHER);
@@ -154,7 +154,7 @@ public class CityListActivity extends AppCompatActivity implements NavigationVie
                     //weatherInfoList.addAll(WeatherDB.getInstance(CityListActivity.this).loadWeatherInfos());
                     weatherInfoAdapter.notifyDataSetChanged();
 
-                    Intent intent = new Intent(CityListActivity.this, NormalWeatherActivity.class);
+                    Intent intent = new Intent(CityListActivity.this, TabbedWeatherActivity.class);
                     intent.putExtra("county_name", countyName);
                     Toast.makeText(CityListActivity.this,countyName ,Toast.LENGTH_SHORT).show();
                     startActivityForResult(intent, REQUEST_WEATHER);

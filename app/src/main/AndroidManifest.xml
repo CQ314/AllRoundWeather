@@ -24,12 +24,15 @@
             android:name=".activity.ChooseAreaActivity"
             android:label="@string/title_activity_choose_area"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".service.AutoUpdateService" />
+
+        <receiver android:name=".recevier.AutoUpdateReceiver" />
+
         <activity
-            android:name=".activity.NormalWeatherActivity"
-            android:label="@string/title_activity_normal_weather"
+            android:name=".activity.TabbedWeatherActivity"
+            android:label="@string/title_activity_tabbed_weather"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <service android:name=".service.AutoUpdateService"/>
-        <receiver android:name=".recevier.AutoUpdateReceiver"/>
     </application>
 
 </manifest>

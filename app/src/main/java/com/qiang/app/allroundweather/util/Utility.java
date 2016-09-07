@@ -1,15 +1,12 @@
 package com.qiang.app.allroundweather.util;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.qiang.app.allroundweather.activity.NormalWeatherActivity;
 import com.qiang.app.allroundweather.model.City;
 import com.qiang.app.allroundweather.model.AreaDB;
 import com.qiang.app.allroundweather.model.County;
-import com.qiang.app.allroundweather.model.HourlyWeather;
 import com.qiang.app.allroundweather.model.Province;
 import com.qiang.app.allroundweather.model.WeatherDB;
 import com.qiang.app.allroundweather.model.WeatherInfo;
